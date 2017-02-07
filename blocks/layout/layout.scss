@@ -1,13 +1,76 @@
-.layoutBig {
+.layoutFluid {
 	min-width: 320px;
 	max-width: 1920px;
+	margin: 0 auto;
+	//
+	&::before,
+	&::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	//
+	&-header {
+		border-bottom: 3px solid $color_3;
+		//
+		@media (min-width: $lg) {
+			height: 146px;
+			overflow: hidden;
+		}
+	}
 	//
 	&-nav {
-		border-top: 3px solid $color_3;
 		background: $color_1;
 	}
+	//
+	&-banner {
+		//
+		@media (min-width: $sm) {
+			margin-top: 10px;
+			height: 250px;
+			background: url(../../blocks/banner/img/img.jpg) no-repeat;
+			background-size: cover;
+		}
+		@media (min-width: $lg) {
+			height: 450px;
+		}
+	}
+	//
+	&-ourGoal {
+		margin-top: 15px;
+		background: #eeeeee;
+		//
+		@media (min-width: $lg) {
+			margin-top: 35px;
+		}
+	}
+	//
+	&-band {
+		background: $color_3;
+	}
+	//
+	&-map {
+		margin-top: 15px;
+		//
+		@media (min-width: $lg) {
+			margin-top: 48px;
+		}
+	}
+	//
+	&-footer {
+		background: $color_2;
+	}
 }
-.layout {
-//	width: 320px;
 
+.layout {
+	max-width: 1266px;
+	padding: 0 18px;
+	margin: 0 auto;
+	//
+	&::before,
+	&::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
 }

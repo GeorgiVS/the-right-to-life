@@ -1,10 +1,6 @@
 .nav {
-	padding: 10px;
+	padding: 10px 0;
 	background: $color_1;
-	//
-	@media (min-width: $sm) {
-		padding: 0;
-	}
 	//
 	&--control {
 		display: none;
@@ -29,7 +25,7 @@
 			display: none;
 		}
 	}
-	&--buttonBlind {
+	&--buttonBand {
 		width: 60%;
 		margin: 5px auto;
 		height: 2px;
@@ -43,11 +39,14 @@
 		text-align: center;
 		//
 		@media (min-width: $sm) {
-			display: block;
+			display: table;
+			margin: 0 auto;
+			padding: 0;
+			left: 30px;
 		}
 	}
 	&--menuItem {
-		margin-top: 15px;
+		margin-top: 25px;
 		text-transform: uppercase;
 		font-weight: bold;
 		font-size: 0.9rem;
@@ -55,9 +54,9 @@
 		cursor: pointer;
 		//
 		@media (min-width: $sm) {
-			
 			display: inline-block;
-			margin: 0 2rem 0 0;
+			margin-right: 50px;
+			margin-top: 0;
 		}
 	}
 }

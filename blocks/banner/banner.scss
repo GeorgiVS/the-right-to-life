@@ -1,0 +1,25 @@
+.banner {
+	//
+	&--text {
+		padding: 15px;
+		background: $color_2;
+		color: white;
+		font-family: Arial;
+		font-style: italic;
+		border-radius: 5px;
+		line-height: 1.3rem;
+		//
+		@media (min-width: $sm) {
+			width: 450px;
+			position: relative;
+			top: 40px;
+		}
+		//
+		@media (min-width: $lg) {
+			width: 450px;
+			height: 275px;
+			padding: 40px;
+			top: 85px;
+		}
+	}
+}

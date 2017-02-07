@@ -1,0 +1,26 @@
+.footer {
+	color: white;
+	padding: 5px 0;
+	font-size: 0.9rem;
+	//
+	@media (min-width: 500px) {
+		padding: 0;
+		height: 76px;
+		line-height: 76px;
+	}
+	//
+	&--copy {
+		float: left;
+		margin-bottom: 10px;
+		margin-right: 10px;
+	}
+	//
+	&--artMebius {
+		float: right;
+		//
+		a {
+			color: white;
+			text-decoration: underline;
+		}
+	}
+}

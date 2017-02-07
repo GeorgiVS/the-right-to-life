@@ -14,35 +14,47 @@ html(lang="ru")
 		<![endif]-->
 		title Право на жизнь
 	body
-		.layoutBig
-			.layout.container
+		.layoutFluid.layoutFluid-header
+			.layout
 		
 				//Begin header
 				include blocks/header/header.jade
 				//End header
 				
-		.layoutBig.layoutBig-nav
-			.layout.container
+		.layoutFluid.layoutFluid-nav
+			.layout
 		
 				//Begin nav
 				include blocks/nav/nav.jade
 				//End nav
 		
-			//Begin banner
-			include blocks/banner/banner.jade
-			//End banner
-		
+		.layoutFluid.layoutFluid-banner
+			.layout
+			
+				//Begin banner
+				include blocks/banner/banner.jade
+				//End banner
+			
+		.layout
 			//Begin departments
 			include blocks/departments/departments.jade
 			//End departments
+			
+		.layoutFluid.layoutFluid-ourGoal
+			.layout
 		
-			//Begin ourGoal
-			include blocks/ourGoal/ourGoal.jade
-			//End ourGoal
-		
-			//Begin bind
-			include blocks/bind/bind.jade
-			//End bind
+				//Begin ourGoal
+				include blocks/ourGoal/ourGoal.jade
+				//End ourGoal
+				
+		.layoutFluid.layoutFluid-band
+			.layout
+
+				//Begin band
+				include blocks/band/band.jade
+				//End band
+				
+		.layout
 		
 			//Begin activities
 			include blocks/activities/activities.jade
@@ -52,13 +64,19 @@ html(lang="ru")
 			include blocks/mediablock/mediablock.jade
 			//End mediablock
 		
+		.layoutFluid.layoutFluid-map
+		
 			//Begin map
 			include blocks/map/map.jade
 			//End map
 		
-			//Begin footer
-			include blocks/footer/footer.jade
-			//End footer
+		.layoutFluid.layoutFluid-footer
+			.layout
+			
+				//Begin footer
+				include blocks/footer/footer.jade
+				//End footer
 
-	//Scripts
-	script(src="global/js/bootstrap.js")
+		//Scripts
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+		script(src="global/js/scroll.js")

@@ -1,0 +1,30 @@
+.departments {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	font-size: 0.9rem;
+
+	//
+	&--item {
+		
+		padding-top: 15px;
+	}
+	//
+	&--img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+	//
+	&--city {
+		margin-top: 5px;
+		@media (min-width: $sm) {
+			margin-top: 15px;
+		}
+		
+	}
+	//
+	&--phone {
+		color: $color_2;
+	}
+}
