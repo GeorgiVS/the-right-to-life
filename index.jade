@@ -5,6 +5,7 @@ html(lang="ru")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		link(rel="stylesheet", href="global/styles/style.css")
+		link(rel="shortcut icon" href="global/img/favicon.png")
 		link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet")
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -14,21 +15,21 @@ html(lang="ru")
 		<![endif]-->
 		title Право на жизнь
 	body
-		.layoutFluid.layoutFluid-header
+		.layoutFluid.layoutFluid-header.js-animate.fadeIn
 			.layout
 		
 				//Begin header
 				include blocks/header/header.jade
 				//End header
 				
-		.layoutFluid.layoutFluid-nav
+		.layoutFluid.layoutFluid-nav.js-animate.fadeIn
 			.layout
 		
 				//Begin nav
 				include blocks/nav/nav.jade
 				//End nav
 		
-		.layoutFluid.layoutFluid-banner
+		.layoutFluid.layoutFluid-banner.js-animate.fadeIn(data-wow-offset="100")
 			.layout
 			
 				//Begin banner
@@ -40,14 +41,14 @@ html(lang="ru")
 			include blocks/departments/departments.jade
 			//End departments
 			
-		.layoutFluid.layoutFluid-ourGoal
+		.layoutFluid.layoutFluid-ourGoal.js-animate.fadeIn(data-wow-offset="100")
 			.layout
 		
 				//Begin ourGoal
 				include blocks/ourGoal/ourGoal.jade
 				//End ourGoal
 				
-		.layoutFluid.layoutFluid-band
+		.layoutFluid.layoutFluid-band.js-animate.fadeIn(data-wow-offset="100")
 			.layout
 
 				//Begin band
@@ -80,3 +81,4 @@ html(lang="ru")
 		//Scripts
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
 		script(src="global/js/scroll.js")
+		script(src="global/js/wow.js")
