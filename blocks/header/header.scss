@@ -1,0 +1,71 @@
+.header {
+	padding: 5px;
+	color: $color_2;
+	//
+	@media (min-width: $sm) {
+		padding: 15px;
+	}
+	@media (min-width: $sm) {
+		padding: 20px;
+	}
+	@media (min-width: $sm) {
+		padding: 25px;
+	}
+	//
+	&--logoWrapper {
+		display: table;
+		margin: 0 auto;
+		margin-bottom: 15px;
+		overflow: auto;
+		font-style: italic;
+		//
+		@media (min-width: $sm) {
+			width: 100%;
+		}
+	}
+	//
+	&--logo {
+		position: absolute;
+		max-width: 50px;
+		height: auto;
+		font-style: italic;
+		margin-right: 10px;
+		//
+		@media (min-width: $md) {
+			max-width: 70px;
+		}
+		@media (min-width: $lg) {
+			max-width: 100%;
+		}
+	}
+	//
+	&--title {
+		margin: 0 0 0 65px;
+		//
+		@media (min-width: $md) {
+			margin: 10px 0 0 100px;
+		}
+	}
+	//
+	&--titleText {
+		font-size: 1rem;
+		font-weight: normal;
+	}
+	//
+	&--contactsWrapper {
+		text-align: center;
+		//
+		@media (min-width: $sm) {
+			text-align: right;
+		}
+	}
+	//
+	&--phone {
+		font-size: 1.4rem;
+		letter-spacing: 1px;
+	}
+	&--phoneText {
+		font-size: 0.8rem;
+		color: black;
+	}
+}

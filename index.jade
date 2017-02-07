@@ -1,0 +1,64 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href="global/styles/style.css")
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet")
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		title Право на жизнь
+	body
+		.layoutBig
+			.layout.container
+		
+				//Begin header
+				include blocks/header/header.jade
+				//End header
+				
+		.layoutBig.layoutBig-nav
+			.layout.container
+		
+				//Begin nav
+				include blocks/nav/nav.jade
+				//End nav
+		
+			//Begin banner
+			include blocks/banner/banner.jade
+			//End banner
+		
+			//Begin departments
+			include blocks/departments/departments.jade
+			//End departments
+		
+			//Begin ourGoal
+			include blocks/ourGoal/ourGoal.jade
+			//End ourGoal
+		
+			//Begin bind
+			include blocks/bind/bind.jade
+			//End bind
+		
+			//Begin activities
+			include blocks/activities/activities.jade
+			//End activities
+		
+			//Begin mediablock
+			include blocks/mediablock/mediablock.jade
+			//End mediablock
+		
+			//Begin map
+			include blocks/map/map.jade
+			//End map
+		
+			//Begin footer
+			include blocks/footer/footer.jade
+			//End footer
+
+	//Scripts
+	script(src="global/js/bootstrap.js")

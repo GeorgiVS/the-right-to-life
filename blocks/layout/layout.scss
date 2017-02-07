@@ -1,0 +1,13 @@
+.layoutBig {
+	min-width: 320px;
+	max-width: 1920px;
+	//
+	&-nav {
+		border-top: 3px solid $color_3;
+		background: $color_1;
+	}
+}
+.layout {
+//	width: 320px;
+
+}
